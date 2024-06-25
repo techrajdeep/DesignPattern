@@ -2,6 +2,8 @@ package builder.version1;
 
 public class ComputerClient {
     public static void main(String[] args) {
+        // NOTE: Here the new Computer.Builder(...) is creating the instance of inner static class ,
+        // .build() is creating the actual instance of Computer
         Computer computer = new Computer.Builder("2GB", "2TB", "Intel i7").build();
         System.out.println("computer->"+computer);
         Computer computer1 = new Computer.Builder("2GB", "2TB", "Intel i7").setGraphicsCardEnabled(true).build();
