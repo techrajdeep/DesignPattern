@@ -1,4 +1,4 @@
-package builder.version2;
+package builder.version3;
 
 /* A customer ordering a pizza. */
 public class PizzaBuilderDemo {

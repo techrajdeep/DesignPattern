@@ -1,11 +1,10 @@
-package builder.version1;
+package builder.version1_1;
 
-public class Computer {
-    // mandatory param
+public class Computer extends Object{
+    // Optional param
     private  String HDD;
     private  String RAM;
     private  String CPU;
-    //optional
     private  boolean isGraphicsCardEnabled;
     private  boolean isBluetoothEnabled;
 
@@ -53,10 +52,13 @@ public class Computer {
         HDD = builder.HDD;
         RAM = builder.RAM;
         CPU = builder.CPU;
-        this.isGraphicsCardEnabled = builder.isGraphicsCardEnabled;
-        this.isBluetoothEnabled = builder.isBluetoothEnabled;
+        isGraphicsCardEnabled = builder.isGraphicsCardEnabled;
+        isBluetoothEnabled = builder.isBluetoothEnabled;
     }
 
+    public static Builder builder(){
+        return new Builder();
+    }
     @Override
     public String toString() {
         return super.toString()+"Computer{" +
@@ -69,18 +71,27 @@ public class Computer {
     }
 
     public static class Builder{
-        private final String HDD;
-        private final String RAM;
-        private final String CPU;
+        private  String HDD;
+        private  String RAM;
+        private  String CPU;
         private  boolean isGraphicsCardEnabled;
         private  boolean isBluetoothEnabled;
 
-
-        public Builder(String hdd, String ram, String cpu) {
-            HDD = hdd;
-            RAM = ram;
-            CPU = cpu;
+        public Builder setHDD(String HDD) {
+            this.HDD = HDD;
+            return this;
         }
+
+        public Builder setRAM(String RAM) {
+            this.RAM = RAM;
+            return this;
+        }
+
+        public Builder setCPU(String CPU) {
+            this.CPU = CPU;
+            return this;
+        }
+
         public Builder setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
             this.isGraphicsCardEnabled=isGraphicsCardEnabled;
             return this;
