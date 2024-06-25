@@ -5,3 +5,4 @@
 java.lang.StringBuilder#append() (unsynchronized)
 java.lang.StringBuffer#append() (synchronized)
 ```
+### [Read more](https://www.geeksforgeeks.org/builder-pattern-in-java/)
