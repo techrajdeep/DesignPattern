@@ -3,6 +3,9 @@
 #### [text editor exmaple](https://refactoring.guru/design-patterns/command/java/example)
 #### [interesting example](https://java-design-patterns.com/patterns/command/#programmatic-example-of-command-pattern-in-java)
 #### [another good example](https://www.digitalocean.com/community/tutorials/command-design-pattern)
+
+## TODO : undo / redo - used mostly using command pattern
+
 ```
 Actors:
 i) Command - declares an interface for executing an operation;
