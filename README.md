@@ -6,7 +6,7 @@ i) Builder ii) singleton iii) Factory
 ```
 ## Behavioral
 ```
-i) Strategy ii) Command
+i) Strategy ii) Command iii) Observer
 ```
 
 
